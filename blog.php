@@ -134,20 +134,6 @@
         </div>
       </div>
       <div class="row" id="blog_container">
-
-        <!-- <div class="col-xs-18 col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="assets/images/imm1.webp" style="height:200px;width:100%;" />
-            <div class="caption">
-              <p style="color:#DC1010;font-size:12px"><b style="color:#DC1010">TIPS</b></p>
-              <p style="font-size:12px"><b style="color:black">May 16 2023</b></p>
-              <h4>Leveraged Customer Feedback for Improved Services</h4>
-              <p>Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety...
-              </p>
-            </div>
-          </div>
-        </div> -->
-
       </div>
       <div class="row">
         <div class="col-md-4"></div>
@@ -212,8 +198,9 @@
         let blogs_container = $('#blog_container');
         let blogs = response.filter((blog) => !blog.featured);
         blogs.forEach((blog) => {
+          console.log(blog)
           let blog_html = `
-          <div class="col-xs-18 col-sm-6 col-md-4">
+          <a href="/blog-inside.php?id=${blog.id}" class="col-xs-18 col-sm-6 col-md-4">
             <div class="thumbnail">
               <img src="${blog.featured_image_path}" style="height:200px;width:100%;object-fit: cover;" />
               <div class="caption">
@@ -223,7 +210,7 @@
                 <p>${blog.description.substring(0, 100) + '...'}</p>
               </div>
             </div>
-          </div>
+          </a>
           `;
           blogs_container.append(blog_html);
         });
