@@ -115,7 +115,7 @@
       </div>
     </div>
   </div>
-  <div class="page-container3 sectionBox" style="background: #E5E7EB;;">
+  <!-- <div class="page-container3 sectionBox" style="background: #E5E7EB;;">
     <div class="container" id="spacing">
       <div class="heading">
         <h2 class="page-title" style="color:black">Blog</h2><br>
@@ -171,7 +171,7 @@
 
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div class="page-container3 sectionBox" style="background:rgba(82, 97, 117, 1);">
     <div class="container" id="spacing">
@@ -196,12 +196,12 @@
   <script>
     let blog_id = new URLSearchParams(window.location.search).get('id');
     $.ajax({
-      url: 'https://app.asiadealhub.com/resource/' + blog_id,
+      url: 'https://app.asiadealhub.com/resource/get/' + blog_id,
       type: 'GET',
       success: function(response) {
         console.log(response);
         $('#head').css('background-image', 'url(' + response.featured_image_path + ')');
-        $('#blog_type').text(response.type.toUpperCase());
+        $('#blog_type').text(response.type.toUpperCase().replace('_', ' '));
         $('#blog-title').html(response.title);
         $('#blog-author').html(response.author + ' | ' + response.post_date);
         $('#blog-content').html(response.content);
