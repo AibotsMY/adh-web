@@ -17,56 +17,58 @@
 </head>
 
 <body>
-<div id="app" class="layout language-en">
-  
-<?php include('header.php'); ?>
+  <div id="app" class="layout language-en">
+
+    <?php include('header.php'); ?>
     <div id="content" class="site-content layout-full">
       <div class="page-container">
         <main class="site-main">
-        <div class="page-content">
+          <div class="page-content">
 
-         <!-- Header -->
-         <header id="head" style="background: linear-gradient(90deg, black 14%, rgba(0, 0, 0, 0.09) 92%, rgba(0, 0, 0, 0) 100%), 
+            <!-- Header -->
+            <header id="head" style="background: linear-gradient(90deg, black 14%, rgba(0, 0, 0, 0.09) 92%, rgba(0, 0, 0, 0) 100%), 
             #181015 url(assets/images/banner15.webp) no-repeat;background-size: cover;">
-            <div class="container">
-              <div class="heading">
-                <h1 style="font-family:Inter">
-                  Insights and <br>Inspiration</h1>
-                <p style="color:white">
-                  Stay Informed, Stay Inspired, Stay Connected
-                </p>
-                <br />
+              <div class="container">
+                <div class="heading">
+                  <h1 style="font-family:Inter">
+                    Insights and <br>Inspiration</h1>
+                  <p style="color:white">
+                    Stay Informed, Stay Inspired, Stay Connected
+                  </p>
+                  <br />
 
+                </div>
+                <div class="banner-content">
+
+                </div>
               </div>
-              <div class="banner-content">
+            </header>
 
-              </div>
-            </div>
-          </header>
-
-      </div></main></div>
+          </div>
+        </main>
+      </div>
     </div>
-    </div>
+  </div>
 
 
   <div class="page-container3 sectionBox" style="background:#E5E7EB">
     <div class="" id="spacing">
       <h2 style="margin-bottom:20px">Featured Blog</h2>
-      <div class="row row-height">
-        <div class="col-xs-18 col-sm-8 col-md-8 col-custom pr0">
+      <div class="row row-height" id="featured_section">
+        <div class="col-xs-18 col-sm-7 col-md-7 col-custom pr0">
           <div class="img-box">
             <img src="assets/images/im6.webp">
           </div>
           <!-- end img box -->
         </div>
 
-        <div class="col-xs-18 col-sm-4 col-md-4" style="background:#0F122B;">
+        <div class="col-xs-18 col-sm-5 col-md-5" style="background:#0F122B;">
           <div id="about-text">
             <h6 style="color:#DC1010">INDUSTRY</h6>
-            <h4 style="color:white">How To Choose Best Management Tool</h4>
-            <p style="color:white">Static websites are now used to bootstrap lots of
+            <h4 style="color:white;line-height: 2.5rem; font-size:30px;">How To Choose Best Management Tool</h4>
+            <p style="color:white; margin-top:20px !important;">Static websites are now used to bootstrap lots of
               websites and are becoming the basis for a variety...</p>
-            <a href="blog-inside.php" class="btn btn-info btn-xs" role="button">READ MORE</a>
+            <a href="blog-inside.php" class="btn btn-info btn-xs mt-4" role="button">READ MORE</a>
           </div>
           <!-- end about text-->
 
@@ -94,36 +96,36 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="col-md-6">
-                <div class="select-container">
-  
-        <select id="selectField">
-            <option value="option1">Insight Type: All</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
-        </select>
-        <span class="dropdown-icon">&#9660;</span>
-    </div>
+                  <div class="select-container">
+
+                    <select id="selectField">
+                      <option value="option1">Insight Type: All</option>
+                      <option value="option2">Option 2</option>
+                      <option value="option3">Option 3</option>
+                    </select>
+                    <span class="dropdown-icon">&#9660;</span>
+                  </div>
                   <!-- Add more filter fields as needed -->
                 </div>
                 <div class="col-md-6">
-                <div class="select-container">
-  
-  <select id="selectField">
-      <option value="option1">All</option>
-      <option value="option2">Option 2</option>
-      <option value="option3">Option 3</option>
-  </select>
-  <span class="dropdown-icon">&#9660;</span>
-</div>
+                  <div class="select-container">
+
+                    <select id="selectField">
+                      <option value="option1">All</option>
+                      <option value="option2">Option 2</option>
+                      <option value="option3">Option 3</option>
+                    </select>
+                    <span class="dropdown-icon">&#9660;</span>
+                  </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="col-md-4"></div>
                 <div class="col-md-8">
-                <div class="search-container">
-                <i class="fa fa-search search-icon"></i>
-  <input type="text" placeholder="Search..." class="search-input"> 
-</div>
+                  <div class="search-container">
+                    <i class="fa fa-search search-icon"></i>
+                    <input type="text" placeholder="Search..." class="search-input">
+                  </div>
                 </div>
               </div>
             </div>
@@ -131,89 +133,8 @@
           </div>
         </div>
       </div>
-      <div class="row">
-
-        <div class="col-xs-18 col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="assets/images/imm1.webp" style="height:200px;width:100%;" />
-            <div class="caption">
-              <p style="color:#DC1010;font-size:12px"><b style="color:#DC1010">TIPS</b></p>
-              <p style="font-size:12px"><b style="color:black">May 16 2023</b></p>
-              <h4>Leveraged Customer Feedback for Improved Services</h4>
-              <p>Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety...
-              </p>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xs-18 col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="assets/images/imm2.webp" style="height:200px;width:100%;" />
-            <div class="caption">
-              <p style="color:#DC1010;font-size:12px"><b style="color:#DC1010">TIPS</b></p>
-              <p style="font-size:12px"><b style="color:black">May 16 2023</b></p>
-              <h4>Leveraged Customer Feedback for Improved Services</h4>
-              <p>Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety...
-              </p>
-
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-18 col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="assets/images/imm3.webp" style="height:200px;width:100%;" />
-            <div class="caption">
-              <p style="color:#DC1010;font-size:12px"><b style="color:#DC1010">TIPS</b></p>
-              <p style="font-size:12px"><b style="color:black">May 16 2023</b></p>
-              <h4>Leveraged Customer Feedback for Improved Services</h4>
-              <p>Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety...
-              </p>
-
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-18 col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="assets/images/imm4.webp" style="height:200px;width:100%;" />
-            <div class="caption">
-              <p style="color:#DC1010;font-size:12px"><b style="color:#DC1010">TIPS</b></p>
-              <p style="font-size:12px"><b style="color:black">May 16 2023</b></p>
-              <h4>Leveraged Customer Feedback for Improved Services</h4>
-              <p>Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety...
-              </p>
-
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-18 col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="assets/images/imm5.webp" style="height:200px;width:100%;" />
-            <div class="caption">
-              <p style="color:#DC1010;font-size:12px"><b style="color:#DC1010">TIPS</b></p>
-              <p style="font-size:12px"><b style="color:black">May 16 2023</b></p>
-              <h4>Leveraged Customer Feedback for Improved Services</h4>
-              <p>Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety...
-              </p>
-
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-18 col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="assets/images/imm6.webp" style="height:200px;width:100%;" />
-            <div class="caption">
-              <p style="color:#DC1010;font-size:12px"><b style="color:#DC1010">TIPS</b></p>
-              <p style="font-size:12px"><b style="color:black">May 16 2023</b></p>
-              <h4>Leveraged Customer Feedback for Improved Services</h4>
-              <p>Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety...
-              </p>
-
-            </div>
-          </div>
-        </div>
-
-      </div><!-- End row -->
+      <div class="row" id="blog_container">
+      </div>
       <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
@@ -258,7 +179,46 @@
   <?php include('footer.php'); ?>
   <script src="assets/js/navigation.js"></script>
   <script src="assets/js/common.js"></script>
+  <script src="assets/js/blog.js"></script>
+  <script>
+    $.ajax({
+      url: 'https://app.asiadealhub.com/resource/',
+      type: 'GET',
+      success: function(response) {
+        let feature_section = $('#featured_section');
+        console.log(feature_section);
+        let feature_blog = response.find((blog) => blog.featured);
+        console.log(feature_blog);
+        feature_section.find('img').attr('src', feature_blog.featured_image_path);
+        feature_section.find('h4').text(feature_blog.title);
+        feature_section.find('h6').text(feature_blog.type.toUpperCase());
+        feature_section.find('p').text(feature_blog.description.substring(0, 100) + '...');
+        feature_section.find('a').attr('href', 'blog-inside.php?id=' + feature_blog.id);
+
+        let blogs_container = $('#blog_container');
+        let blogs = response.filter((blog) => !blog.featured);
+        blogs.forEach((blog) => {
+          console.log(blog)
+          let blog_html = `
+          <a href="/blog-inside.php?id=${blog.id}" class="col-xs-18 col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="${blog.featured_image_path}" style="height:200px;width:100%;object-fit: cover;" />
+              <div class="caption">
+                <p style="color:#DC1010;font-size:12px"><b style="color:#DC1010">${blog.type.toUpperCase()}</b></p>
+                <p style="font-size:12px"><b style="color:black">${blog.post_date}</b></p>
+                <h4 style="line-height: 1.5rem">${blog.title}</h4>
+                <p>${blog.description.substring(0, 100) + '...'}</p>
+              </div>
+            </div>
+          </a>
+          `;
+          blogs_container.append(blog_html);
+        });
+      }
+    });
+  </script>
 
 </body>
+
 
 </html>
