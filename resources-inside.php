@@ -196,7 +196,7 @@
   <script>
     let blog_id = new URLSearchParams(window.location.search).get('id');
     $.ajax({
-      url: 'https://app.asiadealhub.com/resource/get/' + blog_id,
+      url: 'https://app.asiadealhub.com/api/resource/get/' + blog_id,
       type: 'GET',
       success: function(response) {
         console.log(response);

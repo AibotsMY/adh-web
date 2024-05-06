@@ -181,7 +181,7 @@
     const type = urlParams.get('type');
     console.log('asdas');
     $.ajax({
-      url: 'https://app.asiadealhub.com/resource/' + type,
+      url: 'https://app.asiadealhub.com/api/resource/' + type,
       type: 'GET',
       success: function(response) {
         let feature_section = $('#featured_section');
